@@ -13,8 +13,10 @@
 
 //CODE HERE
 function helloWorld(){
-  console.log('Hello, World')
+  console.log(" Hello, World ")
 }
+helloWorld()
+
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -23,7 +25,8 @@ function helloWorld(){
 */
 
 //CODE HERE
-
+const jsNinja = () => "I am JavaScript ninja"
+console.log(jsNinja)
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -33,6 +36,11 @@ function helloWorld(){
 */
 
 //CODE HERE
+function printName(name){
+console.log(name)
+}
+
+printName('Bryton')
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -46,7 +54,11 @@ function helloWorld(){
 */
 
 //CODE HERE
+function greeting(word){
+  console.log(`Hello, ${word}`)
+}
 
+greeting(`Jake`)
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -60,7 +72,13 @@ function helloWorld(){
 */
 
 //CODE HERE
-
+const compareNums = (num1, num2) => {
+  if(num1 > num2){
+    return num1
+  } else {
+    return num2
+  }
+}
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -72,7 +90,12 @@ function helloWorld(){
 
 //CODE HERE
 
+let sum = add(1,2)
 
+function add(num1,num2){
+  return num1 + num2
+}
+console.log(sum)
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
@@ -86,7 +109,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+ console.log('expression')
 
 
 
@@ -101,7 +124,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+ console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -111,6 +134,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
+const exclaimThree = str => `{str.toUpperCase()}!!!`
 
 
 
@@ -126,7 +150,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+ console.log('declaration')
 // console.log('expression')
 
 
@@ -140,7 +164,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(name){
+  if (name === 'Steven'){
+    return " What is up steven"
+  } else if (name === "Bryan") {
+    return "Hey Bryan!"
+  } else { 
+  return `Cool Name, ${name}`
+  }
+}
 
+let nameGreeting = nameCheck('Steven')
+
+console.log(nameGreeting)
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -164,7 +200,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+function printAllNames(names){
+  for (let i = 0; i < names.length; i++){
+    console.log(names[i])
+  }
+} 
+  
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -175,6 +216,17 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+function thatsOdd(num) {
+  if (num % 2 === 0){
+    return "that's not odd!"
+  } else {
+    return "That is odd indeed!"
+  }
+}
+
+let oddChecker = thatsOdd(50)
+
+console.log(oddChecker)
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -188,6 +240,9 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+const bestMovie = title => {
+  return title + `is the best movie`
+}
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -202,7 +257,20 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall(arr){
+  let answers = []
+  for (let i = 0; i < arr.length; i++){
+    if(arr[i] > 100) {
+      answers.push("big")
+    } else{ 
+      answers.push("small")
+    }               
+  } 
+  return answers
+}
 
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+console.log(arrayEvaluator)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
