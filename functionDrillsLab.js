@@ -323,10 +323,10 @@ function emailCheck(email) {
   
   if(email.includes(' @ ')){
     return 'email verified'
-  } else if(email.endsWith(' b '))
+  } else {
     return 'must provide a valid email address'
   }
-
+}
 
  let symCheck = emailCheck('  bryton.hadley@gmail.com  ')
 console.log(symCheck)
@@ -416,4 +416,5 @@ let bathroomScope = ["duck", "rubberDuck"]
 let bathtubScope = ["duck", "rubberDuck", "sailorDuck"]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "realDuck"]
+let pondScope = ['realDuck']
+
